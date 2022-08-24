@@ -25,6 +25,7 @@ class Home extends React.Component {
                 "https://yts-proxy.now.sh/list_movies.json?sort_by=rating"
             ); /* data를 잡기 위해 const movies라고 지정 axious는 느리기 때문에 js에게 componentDidMount가 끝날 때 까지 약간 시간이 걸릴 수 있다고 말해야 된다. 그래서 새로운 함수를 생성하고 async = await으로 만들어주고 그걸 호출 해줘도 된다. => 이 함수가 비동기라고 말한 것. 너는 이걸 기다려야해 라는 뜻이다.  */
         this.setState({ movies, isLoading: false });
+        /* console.log(movies); */
     };
     async componentDidMount() {
         /*   setTimeout(() => {

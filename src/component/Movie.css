@@ -1,9 +1,7 @@
 .movies .movie {
-    width: 45%;
+    width: 700px;
     background-color: white;
     margin-bottom: 70px;
-    display: flex;
-    align-items: flex-start;
     font-weight: 300;
     padding: 20px;
     border-radius: 5px;
@@ -45,4 +43,20 @@
 .movie .movie_year {
     margin-right: 10px;
     font-size: 14px;
+}
+
+.movies .movie a {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-decoration: none;
+    color: inherit;
+}
+
+.movies .movie .movie_summary {
+    font-size: 20px;
+}
+
+* {
+    text-decoration: none;
 }
